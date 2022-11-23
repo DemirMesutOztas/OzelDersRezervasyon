@@ -20,5 +20,7 @@ namespace OzelDersRezervasyon.Data
         }
 
         public System.Data.Entity.DbSet<OzelDersRezervasyon.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<OzelDersRezervasyon.Models.Teacher> Teachers { get; set; }
     }
 }

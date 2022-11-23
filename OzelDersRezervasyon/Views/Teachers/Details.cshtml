@@ -1,0 +1,74 @@
+﻿@model OzelDersRezervasyon.Models.Teacher
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Teacher</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherSurname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherSurname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherPassword2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherPassword2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherBranch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeacherBranch)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TeacherId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<OzelDersRezervasyon.Models.Teacher>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherSurname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherPassword2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TeacherBranch)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherSurname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherPassword2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TeacherBranch)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TeacherId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TeacherId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TeacherId })
+        </td>
+    </tr>
+}
+
+</table>

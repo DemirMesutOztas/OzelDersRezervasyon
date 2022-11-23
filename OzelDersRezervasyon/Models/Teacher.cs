@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -34,6 +35,7 @@ namespace OzelDersRezervasyon.Models
         [Required(ErrorMessage = "Lütfen boş bırakmayınız")]
         [DisplayName("Branş")]
         public string TeacherBranch { get; set; }
+        [NotMapped]
         [DisplayName("Fotoğraf")]
         public HttpPostedFileBase TeacherPhoto { get; set; }
     }
